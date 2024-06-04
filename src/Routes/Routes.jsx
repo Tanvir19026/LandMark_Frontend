@@ -69,7 +69,7 @@ export const router = createBrowserRouter([
                     element: <FlatsDetails />,
                     loader: ({ params }) =>
                       fetch(
-                        `https://land-mark-lh54.vercel.app/flatlist/${params.id}`
+                        `https://land-mark-server.vercel.app/flatlist/${params.id}`
                       ),
                 },
              
@@ -95,7 +95,7 @@ export const router = createBrowserRouter([
               element:<PrivateRoutes><EditProfile></EditProfile></PrivateRoutes>,   
               loader: ({ params }) =>
                 fetch(
-                  `https://land-mark-lh54.vercel.app/userlist/get/${params.id}`
+                  `https://land-mark-server.vercel.app/userlist/get/${params.id}`
                 ),
              },
              {
@@ -107,7 +107,7 @@ export const router = createBrowserRouter([
                 element:<PrivateRoutes><EditProperties></EditProperties></PrivateRoutes>,
                 loader: ({ params }) =>
                     fetch(
-                      `https://land-mark-lh54.vercel.app/flatlist/${params.id}`
+                      `https://land-mark-server.vercel.app/flatlist/${params.id}`
                     ),
              },
 

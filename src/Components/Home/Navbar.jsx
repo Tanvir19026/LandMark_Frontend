@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    fetch('https://land-mark-lh54.vercel.app/flatlist')
+    fetch('https://land-mark-server.vercel.app/flatlist')
       .then(res => res.json())
       .then(data => {
         setFilterData(data);

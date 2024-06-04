@@ -29,7 +29,7 @@ const AddProducts = () => {
 
     const data = { title, squareFeet: `${width} * ${height}`, bedrooms, baths, price, category, imageUrl };
 
-    await fetch("https://land-mark-lh54.vercel.app/flatlist", {
+    await fetch("https://land-mark-server.vercel.app/flatlist", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

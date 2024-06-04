@@ -11,7 +11,7 @@ const ManageProduct = () => {
   const [showToast, setShowToast] = useState(false);
 
   useEffect(() => {
-    fetch("https://land-mark-lh54.vercel.app/flatlist")
+    fetch("https://land-mark-server.vercel.app/flatlist")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -20,7 +20,7 @@ const ManageProduct = () => {
     const token = localStorage.getItem("token");
     if (window.confirm("Are you sure you want to delete this Property?")) {
       try {
-        const response = await fetch(`https://land-mark-lh54.vercel.app/flatlist/${productId}`, {
+        const response = await fetch(`https://land-mark-server.vercel.app/flatlist/${productId}`, {
           method: "DELETE",
           headers: {
             "Content-type": "application/json",

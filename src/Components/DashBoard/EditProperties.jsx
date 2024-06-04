@@ -34,7 +34,7 @@ const EditProduct = () => {
     e.preventDefault();
     alert("Are you sure you want to update the product?");
     const { _id, ...updateData } = formData;  
-    await fetch(`https://land-mark-lh54.vercel.app/flatlist/${id}`, {
+    await fetch(`https://land-mark-server.vercel.app/flatlist/${id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

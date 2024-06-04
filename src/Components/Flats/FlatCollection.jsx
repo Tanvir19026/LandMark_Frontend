@@ -7,7 +7,7 @@ const FlatCollection = () => {
   const [flats, setFlats] = useState([]);
 
   useEffect(() => {
-    fetch("https://land-mark-lh54.vercel.app/flatlist")
+    fetch("https://land-mark-server.vercel.app/flatlist")
       .then((response) => response.json())
       .then((data) => setFlats(data))
       .catch((error) => console.error('Error fetching flats:', error));

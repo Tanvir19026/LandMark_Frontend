@@ -21,7 +21,7 @@ export default function EditProfile() {
       // email: data?.email, // Email is immutable in this case
     };
 
-    fetch(`https://land-mark-lh54.vercel.app/userlist/${data?.email}`, {
+    fetch(`https://land-mark-server.vercel.app/userlist/${data?.email}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

@@ -8,7 +8,7 @@ const Profile = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`https://land-mark-lh54.vercel.app/userlist/${user.email}`)
+      fetch(`https://land-mark-server.vercel.app/userlist/${user.email}`)
         .then((res) => res.json())
         .then((data) => setUserInfo(data));
        
